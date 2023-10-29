@@ -1,9 +1,12 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Character", menuName = "Character")]
 public class Character : ScriptableObject
 {
     public CharacterPart[] characterParts;
+    public List<CharacterPart> inventary;
+    public float coins;
 }
 
 [System.Serializable]
