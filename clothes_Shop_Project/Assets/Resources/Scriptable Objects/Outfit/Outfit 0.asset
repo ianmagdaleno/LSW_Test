@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ceb246195a4364cac9f9666a820df8, type: 3}
+  m_Name: Outfit 0
+  m_EditorClassIdentifier: 
+  partName: Outfit 1
+  animationID: 0
+  allAnimations:
+  - {fileID: 7400000, guid: 5637d05a048a4714d9bd9870f71258b3, type: 2}
+  - {fileID: 7400000, guid: 198a1a7a89d619b4e835e3494d8e2f0e, type: 2}
+  - {fileID: 7400000, guid: 5ca49e8746844ac45a4a9695df7cf3cb, type: 2}
+  - {fileID: 7400000, guid: 7e2fba200350f2a448b919bd196e868b, type: 2}
+  - {fileID: 7400000, guid: 6b0be9bdcc93679408728ace156a5ff3, type: 2}
+  - {fileID: 7400000, guid: ef759cb19d436104d93ef2629ddcaebc, type: 2}
+  - {fileID: 7400000, guid: 61773fa38184b6f40820c06e31c62f95, type: 2}
+  - {fileID: 7400000, guid: ff880a7b570bff24ca034c7dadc4bd57, type: 2}
