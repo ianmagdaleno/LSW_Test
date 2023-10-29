@@ -19,3 +19,9 @@ MonoBehaviour:
     bodyPart: {fileID: 11400000, guid: dc5a4b5d26851ae41b51f712144ed2fe, type: 2}
   - name: Outfit
     bodyPart: {fileID: 11400000, guid: 1baf95592c3760c4ca1e5c22139d87c1, type: 2}
+  inventary:
+  - name: test 0
+    bodyPart: {fileID: 11400000, guid: 1baf95592c3760c4ca1e5c22139d87c1, type: 2}
+  - name: test 1
+    bodyPart: {fileID: 11400000, guid: b2875346816fa7242a802f1cebbaf810, type: 2}
+  coins: 0

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partName: Outfit 1
   animationID: 0
+  icon: {fileID: 1295116953, guid: 753276a40a5e8f94f978f018ec16c274, type: 3}
   allAnimations:
   - {fileID: 7400000, guid: 5637d05a048a4714d9bd9870f71258b3, type: 2}
   - {fileID: 7400000, guid: 198a1a7a89d619b4e835e3494d8e2f0e, type: 2}
