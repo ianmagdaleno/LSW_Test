@@ -5,7 +5,7 @@ using UnityEngine;
 public class Character : ScriptableObject
 {
     public CharacterPart[] characterParts;
-    public List<CharacterPart> inventary;
+    public List<Item> inventary;
     public float coins;
 }
 

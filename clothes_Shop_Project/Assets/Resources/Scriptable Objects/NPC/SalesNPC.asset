@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2029f75ced211dc4981ea29a4413e097, type: 3}
-  m_Name: Player
+  m_Name: SalesNPC
   m_EditorClassIdentifier: 
   characterParts:
   - name: Body
@@ -20,7 +20,5 @@ MonoBehaviour:
   - name: Outfit
     bodyPart: {fileID: 11400000, guid: 1baf95592c3760c4ca1e5c22139d87c1, type: 2}
   inventary:
-  - {fileID: 11400000, guid: 440e32965b401f04780eba199e45e4f1, type: 2}
-  - {fileID: 11400000, guid: a19fb0085f02a454f99b1a79354d85a7, type: 2}
-  - {fileID: 11400000, guid: b3dab65c6f47d5349af2f92824e6c1f6, type: 2}
-  coins: 1000
+  - {fileID: 11400000, guid: 5916282526d8e554ba637d53125abbfa, type: 2}
+  coins: 10000000

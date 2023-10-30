@@ -6,6 +6,7 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public string partName;
+    public string partType;
     public float value;
 
     public BodyPart newPart;
