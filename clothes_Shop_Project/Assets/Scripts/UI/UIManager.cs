@@ -45,6 +45,11 @@ public class UIManager : MonoBehaviour
         UpdatePainel(panelShop);
     }
 
+    public void OpenCharacterEditor()
+    {
+        UpdatePainel(panelCharacterEditor);
+    }
+
     public void ActivePreview(Item data, bool isTrade)
     {
         UpdatePainel(panelPreview);
