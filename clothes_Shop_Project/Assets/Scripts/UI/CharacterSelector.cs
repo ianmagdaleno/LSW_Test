@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor;
+using Unity.VisualScripting;
 
 public class CharacterSelector : MonoBehaviour
 {
@@ -21,7 +23,17 @@ public class CharacterSelector : MonoBehaviour
     }
     public void LoadOptions(BodyPartSelection option)
     {
-        option.bodyPartOptions = Resources.LoadAll<BodyPart>($"Scriptable Objects/{option.bodyPartName}");
+        //option.bodyPartOptions = Resources.LoadAll<BodyPart>($"Scriptable Objects/{option.bodyPartName}");
+        List<BodyPart> inMyInventary = new List<BodyPart>();
+        foreach (Item part in character.inventary)
+        {
+            if(part.partType == option.bodyPartName)
+            {
+               inMyInventary.Add(part.newPart);
+            }
+        }
+        option.bodyPartOptions = inMyInventary.ToArray();
+
     }
     public void NextBodyPart(int partIndex)
     {
@@ -77,8 +89,23 @@ public class CharacterSelector : MonoBehaviour
 
     private void UpdateCurrentPart(int partIndex)
     {
-        bodyPartSelections[partIndex].PartNameText.text = bodyPartSelections[partIndex].bodyPartOptions[bodyPartSelections[partIndex].bodyPartCurrentIndex].partName;
-        character.characterParts[partIndex].bodyPart = bodyPartSelections[partIndex].bodyPartOptions[bodyPartSelections[partIndex].bodyPartCurrentIndex];
+        if (partIndex >= 0 && partIndex < bodyPartSelections.Length)
+        {
+            bodyPartSelections[partIndex].PartNameText.text = bodyPartSelections[partIndex].bodyPartOptions[bodyPartSelections[partIndex].bodyPartCurrentIndex].partName;
+
+            if (partIndex < character.characterParts.Length)
+            {
+                character.characterParts[partIndex].bodyPart = bodyPartSelections[partIndex].bodyPartOptions[bodyPartSelections[partIndex].bodyPartCurrentIndex];
+            }
+            else
+            {
+                Debug.LogWarning("Out of bounds");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Failed");
+        }
     }
 }
 

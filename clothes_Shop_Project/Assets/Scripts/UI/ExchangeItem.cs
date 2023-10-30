@@ -39,24 +39,12 @@ public class ExchangeItem : MonoBehaviour
 
     public void Setup(Item item, bool istrade)
     {
-        //Debug.Log("setou pra buy");
         currentItem = item;
         isTrade = istrade;
         textValue.text = item.value.ToString();
         textName.text = item.partName;
         CheckType(item.partType, item);
     }
-
-    //public void SetupSell(Item item)
-    //{
-    //    Debug.Log("setou pra sell");
-    //    currentItem = item;
-    //    isTrade = true;
-    //    textValue.text = item.value.ToString();
-    //    textName.text = item.partName;
-    //    CheckType(item.partType, item);
-    //}
-
     public void CheckType(string type, Item item)
     {
         switch (type)
@@ -91,6 +79,7 @@ public class ExchangeItem : MonoBehaviour
             {
                 character.inventary.Remove(currentItem);
                 character.coins += currentItem.value;
+                managerUI.UpdateShop(character.inventary, true);
                 ConfirmTrade();
             }
             else
