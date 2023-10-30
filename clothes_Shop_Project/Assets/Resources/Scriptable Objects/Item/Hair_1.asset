@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partName: Hair 1
   partType: Hair
-  value: 0
-  newPart: {fileID: 0}
+  value: 250
+  newPart: {fileID: 11400000, guid: f619079cb5ef0cf41b4a5de9d6781714, type: 2}

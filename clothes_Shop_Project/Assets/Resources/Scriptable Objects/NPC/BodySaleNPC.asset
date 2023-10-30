@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2029f75ced211dc4981ea29a4413e097, type: 3}
+  m_Name: BodySaleNPC
+  m_EditorClassIdentifier: 
+  characterParts:
+  - name: Body
+    bodyPart: {fileID: 11400000, guid: bedc9992d21e68b4c80d881e11c794d1, type: 2}
+  - name: Hair
+    bodyPart: {fileID: 11400000, guid: cb1e3f26447ac774aa2a28b827fcdd62, type: 2}
+  - name: Outfit
+    bodyPart: {fileID: 11400000, guid: 1baf95592c3760c4ca1e5c22139d87c1, type: 2}
+  inventary:
+  - {fileID: 11400000, guid: 440e32965b401f04780eba199e45e4f1, type: 2}
+  - {fileID: 11400000, guid: db77b38749f915f40b1334fdb4d2136f, type: 2}
+  - {fileID: 11400000, guid: e84f8437d66659f48b0bc4449430ed7c, type: 2}
+  coins: 10000000

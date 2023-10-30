@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ceb246195a4364cac9f9666a820df8, type: 3}
   m_Name: Body 2
   m_EditorClassIdentifier: 
-  partName: 
+  partName: skin 3
   animationID: 2
-  icon: {fileID: 0}
-  allAnimations: []
+  icon: {fileID: 1229803923, guid: bf2e2dc847b77364597372ae402b0f78, type: 3}
+  allAnimations:
+  - {fileID: 7400000, guid: 49b5ef10b7dfa324196baa918cb50228, type: 2}
+  - {fileID: 7400000, guid: 0d1f17c99538cc6459eb1180a2b3bba4, type: 2}
+  - {fileID: 7400000, guid: ba13f6e5859236f4ab4f242be1a67cd2, type: 2}
+  - {fileID: 7400000, guid: 5b2f3dfd44d4dea4e9eab0a0458ce194, type: 2}
+  - {fileID: 7400000, guid: d08ea5b30012d084a82d4c4c6f8d972c, type: 2}
+  - {fileID: 7400000, guid: e8b2e413d98f1d14a8fd40ea9eea6dd5, type: 2}
+  - {fileID: 7400000, guid: b0afdc95b2e70074e817d2689cf7fd65, type: 2}
+  - {fileID: 7400000, guid: 835d714a6c8e75342802dba430ffeb4c, type: 2}

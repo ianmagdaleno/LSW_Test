@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partName: Outfit 1
   partType: Outfit
-  value: 200
+  value: 500
   newPart: {fileID: 11400000, guid: b2875346816fa7242a802f1cebbaf810, type: 2}

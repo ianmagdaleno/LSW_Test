@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partName: body 1
   partType: Body
-  value: 100
-  newPart: {fileID: 0}
+  value: 250
+  newPart: {fileID: 11400000, guid: bedc9992d21e68b4c80d881e11c794d1, type: 2}
