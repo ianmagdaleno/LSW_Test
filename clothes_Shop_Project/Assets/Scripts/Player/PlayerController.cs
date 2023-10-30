@@ -1,39 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Moviment and Animation")]
+    [Header("Movement and Animation")]
 
     [SerializeField] private float speed = 10f;
 
-    private Rigidbody2D rbPlayer;
-    private Vector3 moviment;
+    private Vector3 movement;
     private Animator animator;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        rbPlayer = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        moviment = Vector3.zero;
-        moviment.x = Input.GetAxisRaw("Horizontal");
-        moviment.y = Input.GetAxisRaw("Vertical");
+        movement = Vector3.zero;
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
         UpdatePositionAndAnimation();
     }
 
     private void UpdatePositionAndAnimation()
     {
-        if (moviment != Vector3.zero)
+        if (movement != Vector3.zero)
         {
             MoveCharacter();
-            animator.SetFloat("valueX", moviment.x);
-            animator.SetFloat("valueY", moviment.y);
+            animator.SetFloat("valueX", movement.x);
+            animator.SetFloat("valueY", movement.y);
             animator.SetBool("isMoving", true);
         }
         else
@@ -44,6 +40,6 @@ public class PlayerController : MonoBehaviour
 
     private void MoveCharacter()
     {
-        rbPlayer.MovePosition(transform.position + moviment * speed * Time.deltaTime);
+        transform.position += movement * speed * Time.deltaTime;
     }
 }
